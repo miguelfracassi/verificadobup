@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ganhe seu verificado · Bloxter</title>
+  <meta name="description" content="Entre com sua conta Bloxter e descubra se você já pode ganhar o selo de verificado.">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <main class="stage">
+    <div class="hero" aria-label="Bloxter">
+      <div class="face-wrap" id="face"></div>
+      <div class="bar" aria-hidden="true"></div>
+      <div class="logo-wrap" role="img" aria-label="Logo do Bloxter">
+        <svg viewBox="0 0 340 340">
+          <defs><mask id="logoMask" maskUnits="userSpaceOnUse" x="-20" y="-20" width="380" height="380">
+            <path class="logo-draw" pathLength="1" d="M68,268 C66.2,263.3 59.2,251.3 57,240 C54.8,228.7 54.2,215.0 55,200 C55.8,185.0 57.0,166.7 62,150 C67.0,133.3 73.7,115.0 85,100 C96.3,85.0 114.2,70.3 130,60 C145.8,49.7 165.8,42.5 180,38 C194.2,33.5 204.2,31.0 215,33 C225.8,35.0 239.2,44.7 245,50 C250.8,55.3 249.5,56.7 250,65 C250.5,73.3 250.0,90.8 248,100 C246.0,109.2 246.0,116.2 238,120 C230.0,123.8 213.0,121.0 200,123 C187.0,125.0 171.7,127.5 160,132 C148.3,136.5 136.7,142.0 130,150 C123.3,158.0 121.7,171.7 120,180 C118.3,188.3 117.5,195.5 120,200 C122.5,204.5 126.7,206.5 135,207 C143.3,207.5 158.3,206.7 170,203 C181.7,199.3 194.3,193.8 205,185 C215.7,176.2 226.5,155.3 234,150 C241.5,144.7 244.3,149.7 250,153 C255.7,156.3 262.7,160.5 268,170 C273.3,179.5 280.3,196.7 282,210 C283.7,223.3 282.5,237.5 278,250 C273.5,262.5 265.5,276.2 255,285 C244.5,293.8 227.5,299.7 215,303 C202.5,306.3 190.8,305.8 180,305 C169.2,304.2 158.3,301.3 150,298 C141.7,294.7 136.3,290.0 130,285 C123.7,280.0 115.0,270.8 112,268"/>
+          </mask></defs>
+          <image class="logo-img" href="/symbol.png" width="340" height="340" mask="url(#logoMask)"/>
+        </svg>
+      </div>
+    </div>
+
+    <section class="glass" aria-labelledby="t">
+      <h1 id="t">Ganhe seu verificado</h1>
+      <p class="sub">Entre com a conta que você usa no Bloxter para a gente conferir o seu perfil.</p>
+      <form id="login" novalidate>
+        <label>E-mail
+          <input name="email" type="email" inputmode="email" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="voce@email.com" required>
+        </label>
+        <label>Senha
+          <span class="pw">
+            <input name="password" type="password" autocomplete="current-password" placeholder="Sua senha do Bloxter" required>
+            <button type="button" id="eye" aria-label="Mostrar senha">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </span>
+        </label>
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn" id="go" type="submit">Continuar</button>
+      </form>
+      <p class="fine">Sua senha é usada só para entrar no Bloxter e não fica guardada aqui.</p>
+    </section>
+  </main>
+  <script src="/js/bg.js"></script>
+  <script src="/js/face.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "bloxter-verificado",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ganhe seu verificado no Bloxter",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js", "mock": "node test/mock-bloxter.js" }
+}
